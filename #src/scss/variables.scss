@@ -1,0 +1,30 @@
+//variables
+
+//colors
+$grey-bg: #f7f7f7;
+$main-font-color: #333333;
+$grey: #afb7bf;
+$blue: #19b5fe;
+$dark-blue: #013668;
+
+//fonts
+$font: 'Open Sans', sans-serif;
+$main-font-size: 15px;
+
+@mixin main-font {
+    color: $main-font-color;
+    font-size: $main-font-size;
+}
+
+@mixin main-subheader {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;    
+}
+
+@mixin intext-link {
+    color: $blue;
+    &:hover {
+        color: $dark-blue;
+    }
+}

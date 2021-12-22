@@ -1,0 +1,65 @@
+.main {
+    flex-grow: 1;
+    margin-right: 30px;
+    background-color: #fff;
+    padding: 40px 80px;
+
+    .intro-par {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 40px;
+        span {
+            font-weight: 700;
+        }
+    }
+
+    blockquote {
+        border-left: 3px solid $blue;
+        padding-left: 50px;
+        font-size: 18px;
+        line-height: 30px;
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+
+    .bold-par {
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    .intext-link {
+        @include intext-link;
+    }
+
+    .subheader {
+        @include main-subheader;
+    }
+
+    .wider {
+        margin: 0 -80px;
+    }
+
+    .blue-form-div .wider {
+        background-color: $dark-blue;
+        color: #fff;
+        padding: 40px 80px;
+    }
+
+    .blue-form {
+        display: flex;
+    }
+    .form-left {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+
+    }
+    .form-right {
+        display: flex;
+        flex-basis: 50%;
+
+    }
+
+
+}
